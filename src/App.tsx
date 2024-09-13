@@ -9,11 +9,18 @@ function App() {
         <div className="App">
             <p>Hello, Retina &#128075;</p>
             {/* <div className={'bg'}></div> */}
+
             {/* <img src={image} srcSet={`${image2x} 2x, ${image3x} 3x`} alt="cat"/> */}
-            <picture>
-                <source/>
-                <img/>
-            </picture>
+            
+            {/* <picture>
+                <source srcSet={`${image3x} 3x, ${image2x} 2x, ${image} 1x`}/>
+                <img src={image} alt="cat"/>
+            </picture> */}
+
+            <figure>
+            <img src={image} srcSet={`${image2x} 2x, ${image3x} 3x`} alt="cat"/>
+                <figcaption>Super cat</figcaption>
+            </figure>
         </div>
     );
 }
